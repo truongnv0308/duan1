@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   workspace:
@@ -14,9 +14,9 @@ services:
       - ./docker/nginx_log:/var/log/nginx
       - ./docker/php-fpm/php-fpm.log/:/var/log/php-fpm.log
       - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
-  links:
+    links:
       - mysql
-      
+
   mysql:
     image: mysql:latest
     container_name: mysql_truong
