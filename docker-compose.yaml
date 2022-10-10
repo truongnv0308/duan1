@@ -16,6 +16,7 @@ services:
       - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
   links:
       - mysql
+      
   mysql:
     image: mysql:latest
     container_name: mysql_truong
