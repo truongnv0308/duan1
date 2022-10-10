@@ -15,7 +15,7 @@ services:
       - ./docker/php-fpm/php-fpm.log/:/var/log/php-fpm.log
       - ./docker/config/app.conf:/etc/nginx/conf.d/app.conf
   links:
-    - mysql
+      - mysql
   mysql:
     image: mysql:latest
     container_name: mysql_truong
